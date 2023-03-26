@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Shantell+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&family=Cinzel+Decorative:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: #101010;
+    background-image: url(images/constellations-wallpaper.jpg);
+    color: #fff;
+}
+
+header{
+    position: sticky;
+    background-color: #101010; 
+    border-bottom: solid 1px;
+    background-image: url(images/blue.png);
+    top: 0;
+    height:  80px;
+    width: 100%;
+    z-index: 1;       
+}
+
+/*Är onödig för mindre skärmen men centrerar innehållet när skärmen vidgas*/
+.inner-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    height: 100%;
+    margin: auto;  
+}
+
+/*loggan*/
+.logo{
+    font-family: 'Supermercado One', cursive;
+    color: #fff;
+    font-size:250%;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#logo-secondpart{
+    font-family: 'Cinzel Decorative', cursive;
+    font: bold;
+    font-weight: 10;
+    margin-left: 3px;
+    color: #18006d;
+}
+
+span{
+    color: #4ba8ff;
+}
+
+nav a{   
+    font-family: 'Supermercado One', cursive;
+    transition-duration: 0.4s;
+    cursor: pointer; 
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;       
+}
+
+nav a:hover{
+    background-color: rgba(84, 85, 150, 0.534);
+}
+
+#home{
+    display: flex;
+}
+
+section{
+    padding-left: 20px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+#content {
+    color: rgba(255, 255, 255, 0.705);
+    
+}
+
+#home img{
+    right: 0px;
+    height: calc(75vh - 80px);
+    margin-top: 15vh;
+}
+
+h1{
+    font-size: 20px;
+}
+
+#home p{
+    font-size: 0.7rem;
+}
+
+main{
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    height: 100%;
+    position: relative;
+}
+
+.description{
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 27vh;
+    border-bottom: solid white 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-bg{
+    background-color: #101010;
+    border: #fff 7px solid;
+    border-image: linear-gradient(180deg, rgb(0, 187, 168), rgb(68, 47, 255)) 1;
+    padding: 20px;
+}
+
+.description h2{
+    margin: 10px 0 10px 0;
+    font-size: 3rem;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.description p{
+    letter-spacing: 0.04em
+}
+  
+.row {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+  
+.card {
+    position: relative;
+    width: 80%;
+    background: #fff;
+    color: black;
+    border: 3px solid #ccc;
+    border-image: linear-gradient(200deg, rgb(0, 187, 168), rgb(68, 47, 255)) 1;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+  
+.card-header {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.card-header img{
+    width: 100%;
+}
+
+
+.card h2{   
+    font-family: 'Shantell Sans', cursive;
+    margin: 0 0 10px 0;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+}
+  
+
+
+.card-body {    
+    padding: 30px 20px;
+    font-size: 18px;
+}
+  
+.card-body .fa {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+    padding: 10px;
+    color: black;
+}
+  
+.card:hover {
+    transform: scale(1.3);
+    color: #28666e;
+}  
+
+.map{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    height: 225px;
+    width: 300px;
+    resize: both;
+    overflow: auto;
+    margin-bottom: 80px;
+    border-radius: 5px;
+}
+
+
+.site-footer{  
+    text-decoration: none; 
+    background-color: #101010;
+
+    width: 100%;
+    border-top: 4px solid white;
+    border-image: linear-gradient(120deg, rgb(0, 187, 168), rgb(68, 47, 255)) 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
+
+.site-footer div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adress li{
+    padding: 5px 10px;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+footer .fa{
+    padding: 5px;
+    color: white;
+}
+
+#datum{
+    padding: 0;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+hr{
+    margin: 10px 10px;
+    width: 100%;
+}
+
+.fa:hover{
+    background-color: RoyalBlue;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    opacity: 1;
+}
+
+.logo:hover{
+    background-color: rgb(62, 72, 102);
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    opacity: 1;
+}
+
+.fa:active{
+    background-color: #18006d;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+    transition: 0.1s;
+}
+
+
+
+.profil{
+    border: solid 8px transparent;
+    border-image: linear-gradient(100deg, rgb(0, 187, 168), rgb(68, 47, 255)) 1;
+}
+
+
+
+@media screen and (min-width: 600px) {
+    h1{
+        font-size: 40px;
+    }
+
+    #home img{
+        margin: 0;
+        height: calc(100vh - 80px);
+    }
+
+    #home p{
+        font-size: 1rem;
+    }
+
+    iframe {
+        height: 450px;
+        width: 600px;
+        resize: both;
+        overflow: auto;
+    }
+
+    .card{
+        width: 40%;
+    }
+
+    footer{
+        width: 40%;
+        height: fit-content;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+
+    .inner-header{
+        width: 60%;
+        flex-direction: row;
+    }
+
+    h1{
+        font-size: 75px;
+    }
+
+    .card{
+        width: 30%;
+    }
+
+    footer{
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 801px) {
+
+    nav a{
+        font-size: 20px;
+    }
+
+    .card{
+        width: 20%;
+    }  
+
+    .logo{
+        font-size: 160%;
+    }
+
+    .profil{
+        width: 100%;
+        height: 300px;
+        object-fit:cover;
+        object-position: top;
+        
+    }
+
+}
+
+
+  
