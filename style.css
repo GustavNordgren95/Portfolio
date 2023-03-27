@@ -197,7 +197,7 @@ main{
 }
   
 .card:hover {
-    transform: scale(1.3);
+    transform: scale(1.15);
     color: #28666e;
 }  
 
