@@ -13,11 +13,40 @@
     box-sizing: border-box;
 }
 
+nav a {
+    font-size: 40px;
+  }
+  
 body{
-    background: #101010;
-    background-image: url(images/constellations-wallpaper.jpg);
-    color: #fff;
+    background-color: #070729;
 }
+
+/* Centered content container */
+.centered-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2; /* Ensure the content is above the particles */
+}
+
+/* Style for your centered h1 */
+.centered-content h1 {
+    font-size: 75px;
+    color: #4ba8ff;
+}
+
+/* Style for the particles container */
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Make the particles cover the entire viewport height */
+    z-index: 1; /* Set z-index behind the centered content */
+}
+
 
 header{
     position: sticky;
@@ -50,6 +79,10 @@ header{
     margin: 5px;
 }
 
+#backgroundimg{
+background-image: url(images/constellations-wallpaper-2560x1440-wallpaper.jpg);
+}
+
 #logo-secondpart{
     font-family: 'Cinzel Decorative', cursive;
     font: bold;
@@ -58,9 +91,6 @@ header{
     color: #18006d;
 }
 
-span{
-    color: #4ba8ff;
-}
 
 nav a{   
     font-family: 'Supermercado One', cursive;
@@ -78,6 +108,11 @@ nav a:hover{
 
 #home{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    height: 100vh;
 }
 
 section{
@@ -90,7 +125,7 @@ section{
 
 #content {
     color: rgba(255, 255, 255, 0.705);
-    
+
 }
 
 #home img{
@@ -101,17 +136,13 @@ section{
 
 h1{
     font-size: 20px;
+    color: #4ba8ff;
+    position: top;
 }
 
-#home p{
-    font-size: 0.7rem;
-}
-
-main{
-    width: 100%;
-    min-height: calc(100vh - 80px);
-    height: 100%;
-    position: relative;
+main {
+    height: 100vh;
+    position: relative; /* Added to create a positioning context for children */
 }
 
 .description{
@@ -378,6 +409,3 @@ hr{
     }
 
 }
-
-
-  

@@ -5,15 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NordgrenPortfolio</title>
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body  id="backgroundimg">
     <header>
-        <!--Innre header för att kunna centrera innehållet-->
+        <!-- Inner header for centering content -->
         <div class="inner-header">      
-            <a href="index.html" class="logo">Gustav <span id="logo-secondpart">Nordgren</span></a>
             <nav class="navigation">
                 <a href="index.html">Home</a>
                 <a href="portfolio.html">Portfolio</a>
@@ -22,16 +20,12 @@
      </header>
 
      <main>
-        <div id="home">
-            <section>
-                <div id="content">
-                    <p>.NET-utvecklare</p>
-                    <h1>Gustav <span>Nordgren</span></h1>
-                </div>     
-            </section>
-            <aside>
-                <img src="images/20210407_183445.jpg" alt="Bild på mig" class="profil">
-            </aside>     
+        <div id="particles"></div>
+        <!-- Centered content container -->
+        <div id="home"> 
+            <div class="centered-content">
+                <h1>Gustav <span style="color: aqua;">Nordgren</span></h1>
+            </div>
         </div>
      </main>
     
@@ -51,5 +45,7 @@
             </ul>
        </div>
    </footer>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
