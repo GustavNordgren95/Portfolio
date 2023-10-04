@@ -152,10 +152,11 @@ main {
     border-bottom: solid white 1px;
     display: flex;
     flex-direction: column;
+    color: #fff;
 }
 
 .description-bg{
-    background-color: #101010;
+    background-color: #0d0c31;
     border: #fff 7px solid;
     border-image: linear-gradient(180deg, rgb(0, 187, 168), rgb(68, 47, 255)) 1;
     padding: 20px;
